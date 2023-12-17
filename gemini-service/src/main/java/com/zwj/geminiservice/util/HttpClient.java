@@ -1,4 +1,4 @@
-package com.zwj.wenxinservice.util;
+package com.zwj.geminiservice.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -63,7 +63,7 @@ public class HttpClient {
             connection.setDoOutput(true);
 
             // 设置连接和读取超时时间（可选）
-            connection.setConnectTimeout(5000);
+            connection.setConnectTimeout(10000);
             connection.setReadTimeout(50000);
 
             // 设置请求头 (可选)
