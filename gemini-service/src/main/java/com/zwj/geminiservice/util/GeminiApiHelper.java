@@ -50,7 +50,7 @@ public class GeminiApiHelper {
                 buildChatGeminiBody(issueStr));
         handleError(resultStr);
         JSONObject resultObj = JSON.parseObject(resultStr);
-        return  resultObj.getString("text");
+        return  resultObj.getJSONArray("candidates").getJSONObject(0).getJSONObject("content").getJSONArray("parts").getJSONObject(0).getString("text");
     }
 
     private String buildChatGeminiBody(String issueStr) {
