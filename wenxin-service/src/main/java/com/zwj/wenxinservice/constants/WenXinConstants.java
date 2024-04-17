@@ -2,8 +2,8 @@ package com.zwj.wenxinservice.constants;
 
 public class WenXinConstants {
 
-    public static final String API_KEY = "LpCElQ9Ly8h4aK0uZ3m4YgOn";
-    public static final String SECRET_KEY = "uADZk0xgiRENKGVha7C84Y9SYuMuFk5k";
+    public static final String API_KEY = "";
+    public static final String SECRET_KEY = "";
 
     /**
      * 获取token
